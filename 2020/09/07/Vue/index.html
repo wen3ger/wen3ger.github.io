@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#3367D6"/>
+  <link rel="apple-touch-icon" href="/icons-192.png">
+  <link rel="manifest" href="/manifest.json">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <title>Vue笔记 | </title>
+
+  
+
+  
+    <link rel="icon" href="/favicon.ico">
+  
+
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    <link href="https://cdn.bootcss.com/highlight.js/9.15.6/styles/default.min.css" rel="stylesheet">
+  
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.1.1"></head>
+<body>
+  <div class="root-container">
+    <!-- navbar -->
+<nav class="navbar">
+  <div class="navbar-content">
+    <!-- logo -->
+    <div class="navbar-logo">
+      <a href="/">
+        
+          
+        
+      </a>
+    </div>
+    <!-- link -->
+    <div class="navbar-link">
+      <div class="navbar-btn">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="navbar-list">
+        
+          <li class="navbar-list-item"><a href="/">HOME</a></li>
+        
+          <li class="navbar-list-item"><a href="/about">ABOUT</a></li>
+        
+          <li class="navbar-list-item"><a href="/links">LINK</a></li>
+        
+          <li class="navbar-list-item"><a href="/tags">TAGS</a></li>
+        
+          <li class="navbar-list-item"><a href="/categories">CATEGORIES</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    
+<!-- header container -->
+<header class="header-container post">
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    <div class="header-content">
+      <div class="post-image" style="background-image: url(http://img.netbian.com/file/2020/0823/48e34d60c8eb0868a336c4c7f0ca358b.jpg)"></div>
+      <div class="post-text">
+        <div class="type-wrap">
+          
+        </div>
+        <h1 class="title-wrap">Vue笔记</h1>
+        <h2 class="title-sub-wrap">
+          <strong></strong>
+          <span>发布于</span>
+          
+  <a href="javascript:;" class="article-date">
+    <time datetime="2020-09-07T08:45:12.818Z" itemprop="datePublished">2020-09-07</time>
+  </a>
+
+        </h2>
+      </div>
+    </div>
+  
+
+  
+  
+
+  </header>
+
+    <!-- 文章 -->
+
+<!-- 文章内容 -->
+
+<div class="body-container">
+  <article class="content-container article-container">
+    <div class="article-content">
+      
+      
+
+      <section class="article-entry">
+        <p>git笔记：<br>创建项目<br>复制地址<br>git  clone  <a target="_blank" rel="noopener" href="https://github.com/wen3ger/PersonalMall.git">https://github.com/wen3ger/PersonalMall.git</a></p>
+<h3 id="生命周期-渲染函数-组件通信"><a href="#生命周期-渲染函数-组件通信" class="headerlink" title="生命周期 渲染函数 组件通信"></a>生命周期 渲染函数 组件通信</h3><p>核心：object.defineProperty   发布者订阅模式</p>
+<h3 id="1-0项目"><a href="#1-0项目" class="headerlink" title="1.0项目"></a>1.0项目</h3><h4 id="1-1-划分目录结构"><a href="#1-1-划分目录结构" class="headerlink" title="1.1.划分目录结构"></a>1.1.划分目录结构</h4><h4 id="1-2创建用户片段"><a href="#1-2创建用户片段" class="headerlink" title="1.2创建用户片段"></a>1.2创建用户片段</h4><h3 id="2-引用两个css文件"><a href="#2-引用两个css文件" class="headerlink" title="2.引用两个css文件"></a>2.引用两个css文件</h3><h3 id="3-别名配置"><a href="#3-别名配置" class="headerlink" title="3.别名配置"></a>3.别名配置</h3><h3 id="4-创建-editorconfig文件"><a href="#4-创建-editorconfig文件" class="headerlink" title="4.创建.editorconfig文件"></a>4.创建.editorconfig文件</h3><h3 id="5-安装router路由-npm-install-vue-router-–save"><a href="#5-安装router路由-npm-install-vue-router-–save" class="headerlink" title="5.安装router路由 npm install vue-router –save"></a>5.安装router路由 npm install vue-router –save</h3><h3 id="6-配置路由"><a href="#6-配置路由" class="headerlink" title="6.配置路由"></a>6.配置路由</h3><h3 id="7-起别名-防止地址路径引用错误"><a href="#7-起别名-防止地址路径引用错误" class="headerlink" title="7.起别名 防止地址路径引用错误"></a>7.起别名 防止地址路径引用错误</h3><h4 id="7-1-webpack-base-conf"><a href="#7-1-webpack-base-conf" class="headerlink" title="7.1   webpack.base.conf"></a>7.1   webpack.base.conf</h4><h4 id="7-2-resolve"><a href="#7-2-resolve" class="headerlink" title="7.2   resolve"></a>7.2   resolve</h4><h4 id="7-3"><a href="#7-3" class="headerlink" title="7.3"></a>7.3</h4><p>​    ‘assets’: resolve(‘@/assets’),<br>​      ‘components’: resolve(‘@/components’),<br>​      ‘route’: resolve(‘@/route’),<br>​      ‘view’: resolve(‘@/view’),</p>
+<h3 id="8-一般导航高度44px-字体14px"><a href="#8-一般导航高度44px-字体14px" class="headerlink" title="8.一般导航高度44px 字体14px"></a>8.一般导航高度44px 字体14px</h3><h3 id="9-npm-install-axios-–save-安装拦截器"><a href="#9-npm-install-axios-–save-安装拦截器" class="headerlink" title="9.npm install axios –save 安装拦截器"></a>9.npm install axios –save 安装拦截器</h3><h3 id="10-better-scroll-移动端滚动"><a href="#10-better-scroll-移动端滚动" class="headerlink" title="10.better-scroll 移动端滚动"></a>10.better-scroll 移动端滚动</h3><ol start="11">
+<li><h3 id="native-原生事件-点击"><a href="#native-原生事件-点击" class="headerlink" title=".native 原生事件 点击"></a>.native 原生事件 点击</h3><h3 id="12-防抖函数"><a href="#12-防抖函数" class="headerlink" title="12.防抖函数"></a>12.防抖函数</h3><h3 id="13-bus-Vue-prototype-bus-new-Vue"><a href="#13-bus-Vue-prototype-bus-new-Vue" class="headerlink" title="13.$bus     Vue.prototype.$bus = new Vue()"></a>13.$bus     Vue.prototype.$bus = new Vue()</h3></li>
+</ol>
+<h3 id="14"><a href="#14" class="headerlink" title="14."></a>14.</h3><p>git status 查看工作区代码相对于暂存区的差别<br>git add . 将当前目录下修改的所有代码从工作区添加到暂存区 . 代表当前目录<br>git commit -m ‘注释’ 将缓存区内容添加到本地仓库<br>git pull origin master先将远程仓库master中的信息同步到本地仓库master中<br>git push origin master 将本地版本库推送到远程服务器，</p>
+<h3 id="15-el-refs-组件-el-拿div元素"><a href="#15-el-refs-组件-el-拿div元素" class="headerlink" title="15.$el  $refs.组件.$el 拿div元素"></a>15.$el  $refs.组件.$el 拿div元素</h3><ol start="16">
+<li><h3 id=""><a href="#" class="headerlink" title=""></a><keep-alive exclude="Detail"></h3></li>
+</ol>
+<h3 id="17-创建export-class-Goods"><a href="#17-创建export-class-Goods" class="headerlink" title="17.创建export class Goods {"></a>17.创建export class Goods {</h3><p>​    constructor(itemInfo, columns, services) {<br>​      this.title = itemInfo.title;<br>​      this.desc = itemInfo.desc;</p>
+<pre><code>&#125;</code></pre>
+<p>  }</p>
+<h3 id="18-判断是不是空对象"><a href="#18-判断是不是空对象" class="headerlink" title="18.判断是不是空对象"></a>18.判断是不是空对象</h3><p>Object.keys(goods).length !== 0</p>
+<h3 id="19-箭头函数"><a href="#19-箭头函数" class="headerlink" title="19.箭头函数"></a>19.箭头函数</h3><p>$nextTick( （）=&gt; {</p>
+<p>})</p>
+<h3 id="20-vuex-1-Actions可以返回一个promise"><a href="#20-vuex-1-Actions可以返回一个promise" class="headerlink" title="20.vuex    1.Actions可以返回一个promise"></a>20.vuex    1.Actions可以返回一个promise</h3><h4 id="2-mapActions的映射关系"><a href="#2-mapActions的映射关系" class="headerlink" title="2.mapActions的映射关系"></a>2.mapActions的映射关系</h4><h3 id="21-善用transfrom"><a href="#21-善用transfrom" class="headerlink" title="21.善用transfrom"></a>21.善用transfrom</h3><h3 id="22-移动端fastClick-减少点击延迟"><a href="#22-移动端fastClick-减少点击延迟" class="headerlink" title="22.移动端fastClick 减少点击延迟"></a>22.移动端fastClick 减少点击延迟</h3><h3 id="22-1-npm-install-fastclick-–save"><a href="#22-1-npm-install-fastclick-–save" class="headerlink" title="22.1  npm install fastclick –save"></a>22.1  npm install fastclick –save</h3><h3 id="22-2-main-js-导入-import-FastClick-from-‘fastclick’"><a href="#22-2-main-js-导入-import-FastClick-from-‘fastclick’" class="headerlink" title="22.2  main.js 导入 import FastClick from ‘fastclick’"></a>22.2  main.js 导入 import FastClick from ‘fastclick’</h3><h3 id="22-3-使用-FastClick-attach-document-body"><a href="#22-3-使用-FastClick-attach-document-body" class="headerlink" title="22.3 使用 FastClick.attach(document.body)"></a>22.3 使用 FastClick.attach(document.body)</h3><h3 id="23-图片懒加载"><a href="#23-图片懒加载" class="headerlink" title="23.图片懒加载"></a>23.图片懒加载</h3><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/xieli26/p/10057763.html">https://www.cnblogs.com/xieli26/p/10057763.html</a></p>
+<h3 id="24-前端px转换成vh-自适应"><a href="#24-前端px转换成vh-自适应" class="headerlink" title="24.前端px转换成vh 自适应"></a>24.前端px转换成vh 自适应</h3><h3 id="24-1-安装插件"><a href="#24-1-安装插件" class="headerlink" title="24.1 安装插件"></a>24.1 安装插件</h3><h3 id="24-2-在postcss-config-js中配置"><a href="#24-2-在postcss-config-js中配置" class="headerlink" title="24.2 在postcss.config.js中配置"></a>24.2 在postcss.config.js中配置</h3><h3 id="25-instanceof-（判断-变量XX-instanceof-XX是不是）"><a href="#25-instanceof-（判断-变量XX-instanceof-XX是不是）" class="headerlink" title="25.instanceof （判断               变量XX            instanceof             XX是不是）"></a>25.instanceof （判断               变量XX            instanceof             XX是不是）</h3><h3 id="26-swiper"><a href="#26-swiper" class="headerlink" title="26.swiper"></a>26.swiper</h3><h3 id="27-在methods写方法，在created中调用"><a href="#27-在methods写方法，在created中调用" class="headerlink" title="27.在methods写方法，在created中调用"></a>27.在methods写方法，在created中调用</h3><h3 id="28-跳转-click-”-router-push”"><a href="#28-跳转-click-”-router-push”" class="headerlink" title="28.跳转@click=”$router.push”"></a>28.跳转@click=”$router.push”</h3><h3 id="29-npm-i-inflection-类名转换"><a href="#29-npm-i-inflection-类名转换" class="headerlink" title="29.npm i inflection 类名转换"></a>29.npm i inflection 类名转换</h3><h3 id="30-上传图片插件"><a href="#30-上传图片插件" class="headerlink" title="30.上传图片插件"></a>30.上传图片插件</h3><p>npm i multer</p>
+<h3 id="31-显示赋值"><a href="#31-显示赋值" class="headerlink" title="31.//显示赋值"></a>31.//显示赋值</h3><p>data里面没有 </p>
+<p>​    this.$set</p>
+<h3 id="32-如果数据直接覆盖data里面的数据，"><a href="#32-如果数据直接覆盖data里面的数据，" class="headerlink" title="32.如果数据直接覆盖data里面的数据，"></a>32.如果数据直接覆盖data里面的数据，</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Object</span>.assign(&#123;&#125;,<span class="built_in">this</span>.model,res.data);</span><br></pre></td></tr></table></figure>
+
+<h3 id="33-富文本编辑器"><a href="#33-富文本编辑器" class="headerlink" title="33.富文本编辑器"></a>33.富文本编辑器</h3><p>npm i –save vue2-editor</p>
+<h3 id="34-管理员密码加密"><a href="#34-管理员密码加密" class="headerlink" title="34.管理员密码加密"></a>34.管理员密码加密</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i bcrypt</span><br></pre></td></tr></table></figure>
+
+<h3 id="35-密码校验"><a href="#35-密码校验" class="headerlink" title="35.密码校验"></a>35.密码校验</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i jsonwebtoken</span><br></pre></td></tr></table></figure>
+
+<h3 id="36-登录状态校验错误提示信息"><a href="#36-登录状态校验错误提示信息" class="headerlink" title="36.登录状态校验错误提示信息"></a>36.登录状态校验错误提示信息</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i http-assert</span><br></pre></td></tr></table></figure>
+
+<h3 id="37-引用scss"><a href="#37-引用scss" class="headerlink" title="37.引用scss"></a>37.引用scss</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -D sass sass-loader</span><br></pre></td></tr></table></figure>
+
+<h3 id="38-精灵图-工具"><a href="#38-精灵图-工具" class="headerlink" title="38.精灵图 工具"></a>38.精灵图 工具</h3><p><a target="_blank" rel="noopener" href="http://www.spritecow.com/">http://www.spritecow.com/</a></p>
+<h3 id="39-第几个不要边框"><a href="#39-第几个不要边框" class="headerlink" title="39.第几个不要边框"></a>39.第几个不要边框</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&amp;:nth-child(<span class="number">4n</span>+<span class="number">1</span>)&#123;</span><br><span class="line">        border-left:none;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="40-跳转链接"><a href="#40-跳转链接" class="headerlink" title="40.跳转链接"></a>40.跳转链接</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;router-link tag=<span class="string">&quot;div&quot;</span> :to=<span class="string">&quot;`/articles/$&#123;news._id&#125;`&quot;</span>&gt;&lt;/router-link&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="41-watch-监听什么数据发生改变"><a href="#41-watch-监听什么数据发生改变" class="headerlink" title="41.watch()监听什么数据发生改变"></a>41.watch()监听什么数据发生改变</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">watch: &#123;</span><br><span class="line">   id:<span class="string">&#x27;fetch&#x27;</span></span><br><span class="line"> &#125;<span class="comment">//id发生改变值 使用watch监听 重新调用fetch程序</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="41-1-数据发生改变（适用于链接跳转）"><a href="#41-1-数据发生改变（适用于链接跳转）" class="headerlink" title="41.1 数据发生改变（适用于链接跳转）"></a>41.1 数据发生改变（适用于链接跳转）</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">在main的router-view绑定key为$route.path也可以 和之前一样</span><br></pre></td></tr></table></figure>
+
+
+      </section>
+
+      <section class="article-footer">
+        
+      </section>
+
+      <section class="article-navs">
+        
+<nav class="card-container card-article-nav">
+  <div class="card-wrap">
+    
+    
+      <div id="article-nav-older" class="card-item img">
+        <article>
+          
+            <div class="card-cover" style="background-image: url(http://img.netbian.com/file/2020/0823/b5db7a9dd7d9a9b38452835ab69e2174.jpg)"></div>
+          
+          <a class="card-link article-nav-link" href="/2020/09/07/node/"></a>
+          <strong class="article-nav-caption">Older</strong>
+          <p class="article-nav-title">
+            
+              node笔记
+            
+          </p>
+        </article>
+      </div>
+    
+  </div>
+</nav>
+
+      </section>
+
+      
+
+  
+  
+
+  
+  
+
+
+    </div>
+  </article>
+</div>
+
+    <!-- footer container -->
+<footer id="footer" class="footer">
+  <div class="footer-container">
+     
+    <p>&copy; 2020 <a href="/" target="_blank"></a></p>
+
+    
+      <p id="hitokoto"></p>
+      <script src="https://v1.hitokoto.cn/?c=a&amp;encode=js&select=%23hitokoto" defer></script>
+    
+
+    
+
+    <p>Powered by <a href="https://hexo.io" target="_blank" rel="noopener noreferrer">Hexo</a> Theme - <a href="https://github.com/miiiku/flex-block" target="_blank" rel="noopener noreferrer author">flex-block</a></p>
+  </div>
+</footer>
+  </div>
+
+  <div class="back-to-top-fixed">
+    <svg class="icon icon-back-to-top" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M725.333333 426.666667c-12.8 0-21.333333-4.266667-29.866667-12.8l-213.333333-213.333333c-17.066667-17.066667-17.066667-42.666667 0-59.733333s42.666667-17.066667 59.733333 0l213.333333 213.333333c17.066667 17.066667 17.066667 42.666667 0 59.733333C746.666667 422.4 738.133333 426.666667 725.333333 426.666667z"></path>
+  <path d="M298.666667 426.666667c-12.8 0-21.333333-4.266667-29.866667-12.8-17.066667-17.066667-17.066667-42.666667 0-59.733333l213.333333-213.333333c17.066667-17.066667 42.666667-17.066667 59.733333 0s17.066667 42.666667 0 59.733333l-213.333333 213.333333C320 422.4 311.466667 426.666667 298.666667 426.666667z"></path>
+  <path d="M512 896c-25.6 0-42.666667-17.066667-42.666667-42.666667L469.333333 170.666667c0-25.6 17.066667-42.666667 42.666667-42.666667s42.666667 17.066667 42.666667 42.666667l0 682.666667C554.666667 878.933333 537.6 896 512 896z"></path>
+</svg> 
+  </div>
+
+  
+  
+
+
+  <!-- aplayer 音频 start -->
+  <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
+  <script type="text/javascript" src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+  <script type="text/javascript">
+    const aplayer = document.querySelectorAll(".aplayer");
+    aplayer && initaplayer(aplayer);
+    function initaplayer(els) {
+      let elsArr = Array.from(els);
+      elsArr.forEach(el => {
+        new APlayer({
+          container: el,
+          audio: { ...el.dataset },
+          theme: "#b7daff",
+          lrcType: 3,
+          autoplay: false,
+          loop: false,
+          mutex: true,
+        });
+      });
+    }
+  </script>
+  <!-- aplayer 音频 end -->
+  
+
+<!-- dplayer 视频 start -->
+<script type="text/javascript" src="https://unpkg.com/dplayer@1.25.1/dist/DPlayer.min.js"></script>
+<script type="text/javascript">
+  const dplayer = document.querySelectorAll(".dplayer");
+  dplayer && initDPlayer(dplayer);
+  function initDPlayer(els) {
+    let elsArr = Array.from(els);
+    elsArr.forEach(el => {
+      let url = el.dataset.url;
+      let cover = el.dataset.cover;
+      let subtitle = el.dataset.subtitle;
+
+      let options = {
+        container: el,
+        video: { url: url, pic: cover },
+        theme: "#b7daff",
+        autoplay: false,
+        loop: false,
+        mutex: true,
+      }
+
+      if (subtitle) {
+        options.subtitle = {
+          url: el.dataset.subtitle,
+        }
+      }
+      new DPlayer(options);
+    });
+  }
+</script>
+<!-- dplayer 视频 end -->
+
+
+<!-- waterfall 瀑布流 start -->
+
+<script src="/lib/waterfall.min.js"></script>
+
+<script type="text/javascript">
+
+const waterfalls = document.querySelectorAll(".waterfall-container");
+
+if (waterfalls && waterfalls.length > 0) {
+  waterfalls.forEach((waterfall, index) => {
+    let cls = "waterfall-container-" + index;
+    waterfall.classList.add(cls);
+    initWaterfall(cls, waterfall);
+  });
+}
+
+function initWaterfall(selector, el) {
+  const options = {};
+  if (Object.keys(el.dataset).length > 0) {
+    for (let k in el.dataset) {
+      options[k] = el.dataset[k];
+    }
+  }
+  waterfall(`.${selector}`, options);
+}
+</script>
+<!-- waterfall 瀑布流 end -->
+
+
+  <!-- zoom start -->
+  
+<script src="/lib/zoom.min.js"></script>
+
+  <script type="text/javascript">
+    document.querySelector(".article-content") && zoom(".article-content");
+  </script>
+  <!-- zoom end -->
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+<script src="/js/script.js"></script>
+
+  
+  <!-- 尾部用户自定义相关内容 -->
+
+</body>
+</html>
