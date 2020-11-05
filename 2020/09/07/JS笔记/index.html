@@ -18,7 +18,7 @@
 
   
 
-  <title>JS笔记 | </title>
+  <title>2JS笔记 | </title>
 
   
 
@@ -27,8 +27,8 @@
   
 
   
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-    <link href="https://cdn.bootcss.com/highlight.js/9.15.6/styles/default.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@1.1.3/index.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlightjs@9.16.2/styles/monokai.css">
   
 
   
@@ -59,14 +59,6 @@
         
           <li class="navbar-list-item"><a href="/">HOME</a></li>
         
-          <li class="navbar-list-item"><a href="/about">ABOUT</a></li>
-        
-          <li class="navbar-list-item"><a href="/links">LINK</a></li>
-        
-          <li class="navbar-list-item"><a href="/tags">TAGS</a></li>
-        
-          <li class="navbar-list-item"><a href="/categories">CATEGORIES</a></li>
-        
       </ul>
     </div>
   </div>
@@ -91,12 +83,15 @@
   
   
     <div class="header-content">
-      <div class="post-image" style="background-image: url(http://img.netbian.com/file/2020/0419/254558237c207b28acd2878c8da46e20.jpg)"></div>
+      
+        <div class="post-image" style="background-image: url(https://qiniu.miiiku.xyz/src/images/banner.jpg)"></div>
+      
+
       <div class="post-text">
         <div class="type-wrap">
           
         </div>
-        <h1 class="title-wrap">JS笔记</h1>
+        <h1 class="title-wrap">2JS笔记</h1>
         <h2 class="title-sub-wrap">
           <strong></strong>
           <span>发布于</span>
@@ -112,8 +107,8 @@
 
   
   
-
-  </header>
+  
+</header>
 
     <!-- 文章 -->
 
@@ -262,7 +257,7 @@
       <section class="article-navs">
         
 <nav class="card-container card-article-nav">
-  <div class="card-wrap">
+  <div class="card-list">
     
     
       <div id="article-nav-older" class="card-item img">
@@ -284,16 +279,6 @@
 </nav>
 
       </section>
-
-      
-
-  
-  
-
-  
-  
-
-
     </div>
   </article>
 </div>
@@ -311,7 +296,17 @@
 
     
 
-     
+    <p>Powered by <a href="https://hexo.io" target="_blank" rel="noopener noreferrer">Hexo</a> Theme - <a href="https://github.com/miiiku/flex-block" target="_blank" rel="noopener noreferrer author">flex-block</a></p>
+    
+    <!--
+    <div class="footer-container__texts">
+      <p>ヽ｀、ヽ｀｀、ヽ｀ヽ｀、、ヽ｀ヽ、ヽ｀、ヽ｀｀、ヽ、｀｀、、ヽ｀ヽ、｀｀、、ヽ｀ヽ、｀ヽ、｀ヽ、｀ヽ</p>
+      <p>｀、ヽ｀｀、ヽ、｀｀｀、｀、ヽ🌙｀｀、｀ヽ｀ヽ、ヽ｀、ヽ｀ヽ、ヽ｀、ヽ｀ヽ、ヽ｀、ヽ｀｀、｀ヽ、｀</p>
+      <p>｀、｀｀、｀、ヽ｀｀、、ヽヽ｀、｀ヽ｀ヽ、ヽ｀、ヽ｀ヽ、ヽ｀、、、ヽヽ、｀｀、、ヽ｀、ヽ｀｀、ヽ｀ヽ｀</p>
+      <p>ヽ｀、｀｀、｀、ヽ｀｀、、ヽヽ｀、｀、、ヽヽ、｀Time waits for on one 🍓｀、、ヽ｀、ヽ｀｀、ヽ｀ヽ｀</p>
+      <p>｀ヽ｀｀、ヽ｀ヽ｀、、ヽ｀ヽ｀ヽ｀ヽ、ヽ｀、ヽ｀｀、ヽ、｀｀、、ヽ｀ヽ、｀｀、、ヽ｀ヽ、｀ヽ、｀ヽ、｀ヽ</p>
+    </div>
+    -->
   </div>
 </footer>
   </div>
@@ -337,15 +332,18 @@
     function initaplayer(els) {
       let elsArr = Array.from(els);
       elsArr.forEach(el => {
-        new APlayer({
+        let params = {
           container: el,
           audio: { ...el.dataset },
           theme: "#b7daff",
-          lrcType: 3,
           autoplay: false,
           loop: false,
           mutex: true,
-        });
+        }
+        if (el.dataset.lrc) {
+          params['lrcType'] = 3
+        }
+        new APlayer(params);
       });
     }
   </script>
@@ -439,8 +437,8 @@ function initWaterfall(selector, el) {
 
 <script src="/js/script.js"></script>
 
+
   
   <!-- 尾部用户自定义相关内容 -->
-
 </body>
 </html>
