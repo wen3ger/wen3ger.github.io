@@ -1,126 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="theme-color" content="#3367D6"/>
-  <link rel="apple-touch-icon" href="/icons-192.png">
-  <link rel="manifest" href="/manifest.json">
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  <title>Vue笔记 | </title>
-
-  
-
-  
-    <link rel="icon" href="/favicon.ico">
-  
-
-  
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@1.1.3/index.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlightjs@9.16.2/styles/monokai.css">
-  
-
-  
-<link rel="stylesheet" href="/css/style.css">
-
-<meta name="generator" content="Hexo 5.1.1"></head>
-<body>
-  <div class="root-container">
-    <!-- navbar -->
-<nav class="navbar">
-  <div class="navbar-content">
-    <!-- logo -->
-    <div class="navbar-logo">
-      <a href="/">
-        
-          
-        
-      </a>
-    </div>
-    <!-- link -->
-    <div class="navbar-link">
-      <div class="navbar-btn">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <ul class="navbar-list">
-        
-          <li class="navbar-list-item"><a href="/">HOME</a></li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
-
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="baidu-site-verification" content="vvVgSQUzPU" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta name="keywords" content="虎虎|博客|个人|utone|Utone|">
+    <meta name="description" content="骑士恨煎蛋，骑士恨孜然">
     
-<!-- header container -->
-<header class="header-container post">
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-    <div class="header-content">
-      
-        <div class="post-image" style="background-image: url(https://cloud.miiiku.xyz/src/images/cover/cover-03.jpg)"></div>
-      
-
-      <div class="post-text">
-        <div class="type-wrap">
+    <title>
+       Vue笔记 -  
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+ 
+    
+      <link rel="icon" href="/images/favicon.ico" />
+    
+  <meta name="generator" content="Hexo 5.1.1"></head>
+  <body>
+    <div id="container">
+      <div id="main-left">
+        <div id="introduce">
+          <div class="logo-worp">
+            <a href="/"><img class="logo" src="/images/logo.png" alt=""/></a>
+          </div>
+          <ul>
+            
+              <li><a href="/"> Home </a></li>
+            
+              <li><a href="/archives"> Archive </a></li>
+            
+              <li><a href="/about"> About </a></li>
+            
+              <li><a href="/atom.xml"> RSS </a></li>
+            
+            <li>
+              <img id="search-img" src="/images/search.svg" alt="search" />
+            </li>
+          </ul>
+           
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F-%E6%B8%B2%E6%9F%93%E5%87%BD%E6%95%B0-%E7%BB%84%E4%BB%B6%E9%80%9A%E4%BF%A1"><span class="post-toc-number">1.</span> <span class="post-toc-text">生命周期 渲染函数 组件通信</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-0%E9%A1%B9%E7%9B%AE"><span class="post-toc-number">2.</span> <span class="post-toc-text">1.0项目</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-1-%E5%88%92%E5%88%86%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">1.1.划分目录结构</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-2%E5%88%9B%E5%BB%BA%E7%94%A8%E6%88%B7%E7%89%87%E6%AE%B5"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">1.2创建用户片段</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-%E5%BC%95%E7%94%A8%E4%B8%A4%E4%B8%AAcss%E6%96%87%E4%BB%B6"><span class="post-toc-number">3.</span> <span class="post-toc-text">2.引用两个css文件</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-%E5%88%AB%E5%90%8D%E9%85%8D%E7%BD%AE"><span class="post-toc-number">4.</span> <span class="post-toc-text">3.别名配置</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#4-%E5%88%9B%E5%BB%BA-editorconfig%E6%96%87%E4%BB%B6"><span class="post-toc-number">5.</span> <span class="post-toc-text">4.创建.editorconfig文件</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#5-%E5%AE%89%E8%A3%85router%E8%B7%AF%E7%94%B1-npm-install-vue-router-%E2%80%93save"><span class="post-toc-number">6.</span> <span class="post-toc-text">5.安装router路由 npm install vue-router –save</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#6-%E9%85%8D%E7%BD%AE%E8%B7%AF%E7%94%B1"><span class="post-toc-number">7.</span> <span class="post-toc-text">6.配置路由</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#7-%E8%B5%B7%E5%88%AB%E5%90%8D-%E9%98%B2%E6%AD%A2%E5%9C%B0%E5%9D%80%E8%B7%AF%E5%BE%84%E5%BC%95%E7%94%A8%E9%94%99%E8%AF%AF"><span class="post-toc-number">8.</span> <span class="post-toc-text">7.起别名 防止地址路径引用错误</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#7-1-webpack-base-conf"><span class="post-toc-number">8.1.</span> <span class="post-toc-text">7.1   webpack.base.conf</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#7-2-resolve"><span class="post-toc-number">8.2.</span> <span class="post-toc-text">7.2   resolve</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#7-3"><span class="post-toc-number">8.3.</span> <span class="post-toc-text">7.3</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#8-%E4%B8%80%E8%88%AC%E5%AF%BC%E8%88%AA%E9%AB%98%E5%BA%A644px-%E5%AD%97%E4%BD%9314px"><span class="post-toc-number">9.</span> <span class="post-toc-text">8.一般导航高度44px 字体14px</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#9-npm-install-axios-%E2%80%93save-%E5%AE%89%E8%A3%85%E6%8B%A6%E6%88%AA%E5%99%A8"><span class="post-toc-number">10.</span> <span class="post-toc-text">9.npm install axios –save 安装拦截器</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#10-better-scroll-%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%BB%9A%E5%8A%A8"><span class="post-toc-number">11.</span> <span class="post-toc-text">10.better-scroll 移动端滚动</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#native-%E5%8E%9F%E7%94%9F%E4%BA%8B%E4%BB%B6-%E7%82%B9%E5%87%BB"><span class="post-toc-number">12.</span> <span class="post-toc-text">.native 原生事件 点击</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#12-%E9%98%B2%E6%8A%96%E5%87%BD%E6%95%B0"><span class="post-toc-number">13.</span> <span class="post-toc-text">12.防抖函数</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#13-bus-Vue-prototype-bus-new-Vue"><span class="post-toc-number">14.</span> <span class="post-toc-text">13.$bus     Vue.prototype.$bus &#x3D; new Vue()</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#14"><span class="post-toc-number">15.</span> <span class="post-toc-text">14.</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#15-el-refs-%E7%BB%84%E4%BB%B6-el-%E6%8B%BFdiv%E5%85%83%E7%B4%A0"><span class="post-toc-number">16.</span> <span class="post-toc-text">15.$el  $refs.组件.$el 拿div元素</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link"><span class="post-toc-number">17.</span> <span class="post-toc-text"></span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#17-%E5%88%9B%E5%BB%BAexport-class-Goods"><span class="post-toc-number">18.</span> <span class="post-toc-text">17.创建export class Goods {</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#18-%E5%88%A4%E6%96%AD%E6%98%AF%E4%B8%8D%E6%98%AF%E7%A9%BA%E5%AF%B9%E8%B1%A1"><span class="post-toc-number">19.</span> <span class="post-toc-text">18.判断是不是空对象</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#19-%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0"><span class="post-toc-number">20.</span> <span class="post-toc-text">19.箭头函数</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#20-vuex-1-Actions%E5%8F%AF%E4%BB%A5%E8%BF%94%E5%9B%9E%E4%B8%80%E4%B8%AApromise"><span class="post-toc-number">21.</span> <span class="post-toc-text">20.vuex    1.Actions可以返回一个promise</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2-mapActions%E7%9A%84%E6%98%A0%E5%B0%84%E5%85%B3%E7%B3%BB"><span class="post-toc-number">21.1.</span> <span class="post-toc-text">2.mapActions的映射关系</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#21-%E5%96%84%E7%94%A8transfrom"><span class="post-toc-number">22.</span> <span class="post-toc-text">21.善用transfrom</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#22-%E7%A7%BB%E5%8A%A8%E7%AB%AFfastClick-%E5%87%8F%E5%B0%91%E7%82%B9%E5%87%BB%E5%BB%B6%E8%BF%9F"><span class="post-toc-number">23.</span> <span class="post-toc-text">22.移动端fastClick 减少点击延迟</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#22-1-npm-install-fastclick-%E2%80%93save"><span class="post-toc-number">24.</span> <span class="post-toc-text">22.1  npm install fastclick –save</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#22-2-main-js-%E5%AF%BC%E5%85%A5-import-FastClick-from-%E2%80%98fastclick%E2%80%99"><span class="post-toc-number">25.</span> <span class="post-toc-text">22.2  main.js 导入 import FastClick from ‘fastclick’</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#22-3-%E4%BD%BF%E7%94%A8-FastClick-attach-document-body"><span class="post-toc-number">26.</span> <span class="post-toc-text">22.3 使用 FastClick.attach(document.body)</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#23-%E5%9B%BE%E7%89%87%E6%87%92%E5%8A%A0%E8%BD%BD"><span class="post-toc-number">27.</span> <span class="post-toc-text">23.图片懒加载</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#24-%E5%89%8D%E7%AB%AFpx%E8%BD%AC%E6%8D%A2%E6%88%90vh-%E8%87%AA%E9%80%82%E5%BA%94"><span class="post-toc-number">28.</span> <span class="post-toc-text">24.前端px转换成vh 自适应</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#24-1-%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6"><span class="post-toc-number">29.</span> <span class="post-toc-text">24.1 安装插件</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#24-2-%E5%9C%A8postcss-config-js%E4%B8%AD%E9%85%8D%E7%BD%AE"><span class="post-toc-number">30.</span> <span class="post-toc-text">24.2 在postcss.config.js中配置</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#25-instanceof-%EF%BC%88%E5%88%A4%E6%96%AD-%E5%8F%98%E9%87%8FXX-instanceof-XX%E6%98%AF%E4%B8%8D%E6%98%AF%EF%BC%89"><span class="post-toc-number">31.</span> <span class="post-toc-text">25.instanceof （判断               变量XX            instanceof             XX是不是）</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#26-swiper"><span class="post-toc-number">32.</span> <span class="post-toc-text">26.swiper</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#27-%E5%9C%A8methods%E5%86%99%E6%96%B9%E6%B3%95%EF%BC%8C%E5%9C%A8created%E4%B8%AD%E8%B0%83%E7%94%A8"><span class="post-toc-number">33.</span> <span class="post-toc-text">27.在methods写方法，在created中调用</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#28-%E8%B7%B3%E8%BD%AC-click-%E2%80%9D-router-push%E2%80%9D"><span class="post-toc-number">34.</span> <span class="post-toc-text">28.跳转@click&#x3D;”$router.push”</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#29-npm-i-inflection-%E7%B1%BB%E5%90%8D%E8%BD%AC%E6%8D%A2"><span class="post-toc-number">35.</span> <span class="post-toc-text">29.npm i inflection 类名转换</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#30-%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E6%8F%92%E4%BB%B6"><span class="post-toc-number">36.</span> <span class="post-toc-text">30.上传图片插件</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#31-%E6%98%BE%E7%A4%BA%E8%B5%8B%E5%80%BC"><span class="post-toc-number">37.</span> <span class="post-toc-text">31.&#x2F;&#x2F;显示赋值</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#32-%E5%A6%82%E6%9E%9C%E6%95%B0%E6%8D%AE%E7%9B%B4%E6%8E%A5%E8%A6%86%E7%9B%96data%E9%87%8C%E9%9D%A2%E7%9A%84%E6%95%B0%E6%8D%AE%EF%BC%8C"><span class="post-toc-number">38.</span> <span class="post-toc-text">32.如果数据直接覆盖data里面的数据，</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#33-%E5%AF%8C%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8"><span class="post-toc-number">39.</span> <span class="post-toc-text">33.富文本编辑器</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#34-%E7%AE%A1%E7%90%86%E5%91%98%E5%AF%86%E7%A0%81%E5%8A%A0%E5%AF%86"><span class="post-toc-number">40.</span> <span class="post-toc-text">34.管理员密码加密</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#35-%E5%AF%86%E7%A0%81%E6%A0%A1%E9%AA%8C"><span class="post-toc-number">41.</span> <span class="post-toc-text">35.密码校验</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#36-%E7%99%BB%E5%BD%95%E7%8A%B6%E6%80%81%E6%A0%A1%E9%AA%8C%E9%94%99%E8%AF%AF%E6%8F%90%E7%A4%BA%E4%BF%A1%E6%81%AF"><span class="post-toc-number">42.</span> <span class="post-toc-text">36.登录状态校验错误提示信息</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#37-%E5%BC%95%E7%94%A8scss"><span class="post-toc-number">43.</span> <span class="post-toc-text">37.引用scss</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#38-%E7%B2%BE%E7%81%B5%E5%9B%BE-%E5%B7%A5%E5%85%B7"><span class="post-toc-number">44.</span> <span class="post-toc-text">38.精灵图 工具</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#39-%E7%AC%AC%E5%87%A0%E4%B8%AA%E4%B8%8D%E8%A6%81%E8%BE%B9%E6%A1%86"><span class="post-toc-number">45.</span> <span class="post-toc-text">39.第几个不要边框</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#40-%E8%B7%B3%E8%BD%AC%E9%93%BE%E6%8E%A5"><span class="post-toc-number">46.</span> <span class="post-toc-text">40.跳转链接</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#41-watch-%E7%9B%91%E5%90%AC%E4%BB%80%E4%B9%88%E6%95%B0%E6%8D%AE%E5%8F%91%E7%94%9F%E6%94%B9%E5%8F%98"><span class="post-toc-number">47.</span> <span class="post-toc-text">41.watch()监听什么数据发生改变</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#41-1-%E6%95%B0%E6%8D%AE%E5%8F%91%E7%94%9F%E6%94%B9%E5%8F%98%EF%BC%88%E9%80%82%E7%94%A8%E4%BA%8E%E9%93%BE%E6%8E%A5%E8%B7%B3%E8%BD%AC%EF%BC%89"><span class="post-toc-number">47.1.</span> <span class="post-toc-text">41.1 数据发生改变（适用于链接跳转）</span></a></li></ol></li></ol> 
           
         </div>
-        <h1 class="title-wrap">Vue笔记</h1>
-        <h2 class="title-sub-wrap">
-          <strong></strong>
-          <span>发布于</span>
-          
-  <a href="javascript:;" class="article-date">
-    <time datetime="2020-09-07T08:45:12.818Z" itemprop="datePublished">2020-09-07</time>
-  </a>
-
-        </h2>
       </div>
+      <div id="main-right"><div id="post">
+    
+    <header class="article-header">
+        <h1>
+            Vue笔记
+        </h1>
+    </header>
+    
+    <div class="post-meta">
+        <time class="post-data" datetime="2020-09-07T08:45:12.818Z" itemprop="datePublished">
+            2020-09-07
+        </time>
+        
+        
     </div>
-  
-
-  
-  
-  
-</header>
-
-    <!-- 文章 -->
-
-<!-- 文章内容 -->
-
-<div class="body-container">
-  <article class="content-container article-container">
-    <div class="article-content">
-      
-      
-
-      <section class="article-entry">
+    
+    <div class="post-entry">
         <p>git笔记：<br>创建项目<br>复制地址<br>git  clone  <a target="_blank" rel="noopener" href="https://github.com/wen3ger/PersonalMall.git">https://github.com/wen3ger/PersonalMall.git</a></p>
 <h3 id="生命周期-渲染函数-组件通信"><a href="#生命周期-渲染函数-组件通信" class="headerlink" title="生命周期 渲染函数 组件通信"></a>生命周期 渲染函数 组件通信</h3><p>核心：object.defineProperty   发布者订阅模式</p>
 <h3 id="1-0项目"><a href="#1-0项目" class="headerlink" title="1.0项目"></a>1.0项目</h3><h4 id="1-1-划分目录结构"><a href="#1-1-划分目录结构" class="headerlink" title="1.1.划分目录结构"></a>1.1.划分目录结构</h4><h4 id="1-2创建用户片段"><a href="#1-2创建用户片段" class="headerlink" title="1.2创建用户片段"></a>1.2创建用户片段</h4><h3 id="2-引用两个css文件"><a href="#2-引用两个css文件" class="headerlink" title="2.引用两个css文件"></a>2.引用两个css文件</h3><h3 id="3-别名配置"><a href="#3-别名配置" class="headerlink" title="3.别名配置"></a>3.别名配置</h3><h3 id="4-创建-editorconfig文件"><a href="#4-创建-editorconfig文件" class="headerlink" title="4.创建.editorconfig文件"></a>4.创建.editorconfig文件</h3><h3 id="5-安装router路由-npm-install-vue-router-–save"><a href="#5-安装router路由-npm-install-vue-router-–save" class="headerlink" title="5.安装router路由 npm install vue-router –save"></a>5.安装router路由 npm install vue-router –save</h3><h3 id="6-配置路由"><a href="#6-配置路由" class="headerlink" title="6.配置路由"></a>6.配置路由</h3><h3 id="7-起别名-防止地址路径引用错误"><a href="#7-起别名-防止地址路径引用错误" class="headerlink" title="7.起别名 防止地址路径引用错误"></a>7.起别名 防止地址路径引用错误</h3><h4 id="7-1-webpack-base-conf"><a href="#7-1-webpack-base-conf" class="headerlink" title="7.1   webpack.base.conf"></a>7.1   webpack.base.conf</h4><h4 id="7-2-resolve"><a href="#7-2-resolve" class="headerlink" title="7.2   resolve"></a>7.2   resolve</h4><h4 id="7-3"><a href="#7-3" class="headerlink" title="7.3"></a>7.3</h4><p>​    ‘assets’: resolve(‘@/assets’),<br>​      ‘components’: resolve(‘@/components’),<br>​      ‘route’: resolve(‘@/route’),<br>​      ‘view’: resolve(‘@/view’),</p>
@@ -164,212 +106,24 @@
 <h4 id="41-1-数据发生改变（适用于链接跳转）"><a href="#41-1-数据发生改变（适用于链接跳转）" class="headerlink" title="41.1 数据发生改变（适用于链接跳转）"></a>41.1 数据发生改变（适用于链接跳转）</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">在main的router-view绑定key为$route.path也可以 和之前一样</span><br></pre></td></tr></table></figure>
 
 
-      </section>
-
-      <section class="article-footer">
-        
-      </section>
-
-      <section class="article-navs">
-        
-<nav class="card-container card-article-nav">
-  <div class="card-list">
-    
-      <div id="article-nav-newer" class="card-item img">
-        <article>
-          
-            <div class="card-cover" style="background-image: url(https://cloud.miiiku.xyz/src/images/cover/cover-01.jpg)"></div>
-          
-          <a class="card-link article-nav-link" href="/2020/09/07/JS%E7%AC%94%E8%AE%B0/"></a>
-          <strong class="article-nav-caption">Newer</strong>
-          <p class="article-nav-title">
-            
-              JS笔记
-            
-          </p>
-        </article>
-      </div>
-    
-    
-      <div id="article-nav-older" class="card-item img">
-        <article>
-          
-            <div class="card-cover" style="background-image: url(https://cloud.miiiku.xyz/src/images/cover/cover-02.jpg)"></div>
-          
-          <a class="card-link article-nav-link" href="/2020/09/07/node/"></a>
-          <strong class="article-nav-caption">Older</strong>
-          <p class="article-nav-title">
-            
-              node笔记
-            
-          </p>
-        </article>
-      </div>
-    
-  </div>
-</nav>
-
-      </section>
     </div>
-  </article>
-</div>
-
-    <!-- footer container -->
-<footer id="footer" class="footer">
-  <div class="footer-container">
-     
-    <p>&copy; 2020 <a href="/" target="_blank"></a></p>
-
-    
-      <p id="hitokoto"></p>
-      <script src="https://v1.hitokoto.cn/?c=a&amp;encode=js&select=%23hitokoto" defer></script>
-    
-
-    
-
-    <p>Powered by <a href="https://hexo.io" target="_blank" rel="noopener noreferrer">Hexo</a> Theme - <a href="https://github.com/miiiku/flex-block" target="_blank" rel="noopener noreferrer author">flex-block</a></p>
-    
-    <!--
-    <div class="footer-container__texts">
-      <p>ヽ｀、ヽ｀｀、ヽ｀ヽ｀、、ヽ｀ヽ、ヽ｀、ヽ｀｀、ヽ、｀｀、、ヽ｀ヽ、｀｀、、ヽ｀ヽ、｀ヽ、｀ヽ、｀ヽ</p>
-      <p>｀、ヽ｀｀、ヽ、｀｀｀、｀、ヽ🌙｀｀、｀ヽ｀ヽ、ヽ｀、ヽ｀ヽ、ヽ｀、ヽ｀ヽ、ヽ｀、ヽ｀｀、｀ヽ、｀</p>
-      <p>｀、｀｀、｀、ヽ｀｀、、ヽヽ｀、｀ヽ｀ヽ、ヽ｀、ヽ｀ヽ、ヽ｀、、、ヽヽ、｀｀、、ヽ｀、ヽ｀｀、ヽ｀ヽ｀</p>
-      <p>ヽ｀、｀｀、｀、ヽ｀｀、、ヽヽ｀、｀、、ヽヽ、｀Time waits for on one 🍓｀、、ヽ｀、ヽ｀｀、ヽ｀ヽ｀</p>
-      <p>｀ヽ｀｀、ヽ｀ヽ｀、、ヽ｀ヽ｀ヽ｀ヽ、ヽ｀、ヽ｀｀、ヽ、｀｀、、ヽ｀ヽ、｀｀、、ヽ｀ヽ、｀ヽ、｀ヽ、｀ヽ</p>
+    <!--畅言PC和WAP自适应版-->
+  
+</div></div>
     </div>
-    -->
-  </div>
-</footer>
-  </div>
-
-  <div class="back-to-top-fixed">
-    <svg class="icon icon-back-to-top" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
-  <path d="M725.333333 426.666667c-12.8 0-21.333333-4.266667-29.866667-12.8l-213.333333-213.333333c-17.066667-17.066667-17.066667-42.666667 0-59.733333s42.666667-17.066667 59.733333 0l213.333333 213.333333c17.066667 17.066667 17.066667 42.666667 0 59.733333C746.666667 422.4 738.133333 426.666667 725.333333 426.666667z"></path>
-  <path d="M298.666667 426.666667c-12.8 0-21.333333-4.266667-29.866667-12.8-17.066667-17.066667-17.066667-42.666667 0-59.733333l213.333333-213.333333c17.066667-17.066667 42.666667-17.066667 59.733333 0s17.066667 42.666667 0 59.733333l-213.333333 213.333333C320 422.4 311.466667 426.666667 298.666667 426.666667z"></path>
-  <path d="M512 896c-25.6 0-42.666667-17.066667-42.666667-42.666667L469.333333 170.666667c0-25.6 17.066667-42.666667 42.666667-42.666667s42.666667 17.066667 42.666667 42.666667l0 682.666667C554.666667 878.933333 537.6 896 512 896z"></path>
-</svg> 
-  </div>
-
-  
-  
-
-
-  <!-- aplayer 音频 start -->
-  <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
-  <script type="text/javascript" src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
-  <script type="text/javascript">
-    const aplayer = document.querySelectorAll(".aplayer");
-    aplayer && initaplayer(aplayer);
-    function initaplayer(els) {
-      let elsArr = Array.from(els);
-      elsArr.forEach(el => {
-        let params = {
-          container: el,
-          audio: { ...el.dataset },
-          theme: "#b7daff",
-          autoplay: false,
-          loop: false,
-          mutex: true,
-        }
-        if (el.dataset.lrc) {
-          params['lrcType'] = 3
-        }
-        new APlayer(params);
-      });
-    }
-  </script>
-  <!-- aplayer 音频 end -->
-  
-
-<!-- dplayer 视频 start -->
-<script type="text/javascript" src="https://unpkg.com/dplayer@1.25.1/dist/DPlayer.min.js"></script>
-<script type="text/javascript">
-  const dplayer = document.querySelectorAll(".dplayer");
-  dplayer && initDPlayer(dplayer);
-  function initDPlayer(els) {
-    let elsArr = Array.from(els);
-    elsArr.forEach(el => {
-      let url = el.dataset.url;
-      let cover = el.dataset.cover;
-      let subtitle = el.dataset.subtitle;
-
-      let options = {
-        container: el,
-        video: { url: url, pic: cover },
-        theme: "#b7daff",
-        autoplay: false,
-        loop: false,
-        mutex: true,
-      }
-
-      if (subtitle) {
-        options.subtitle = {
-          url: el.dataset.subtitle,
-        }
-      }
-      new DPlayer(options);
-    });
-  }
-</script>
-<!-- dplayer 视频 end -->
-
-
-<!-- waterfall 瀑布流 start -->
-
-<script src="/lib/waterfall.min.js"></script>
-
-<script type="text/javascript">
-
-const waterfalls = document.querySelectorAll(".waterfall-container");
-
-if (waterfalls && waterfalls.length > 0) {
-  waterfalls.forEach((waterfall, index) => {
-    let cls = "waterfall-container-" + index;
-    waterfall.classList.add(cls);
-    initWaterfall(cls, waterfall);
-  });
-}
-
-function initWaterfall(selector, el) {
-  const options = {};
-  if (Object.keys(el.dataset).length > 0) {
-    for (let k in el.dataset) {
-      options[k] = el.dataset[k];
-    }
-  }
-  waterfall(`.${selector}`, options);
-}
-</script>
-<!-- waterfall 瀑布流 end -->
-
-
-  <!-- zoom start -->
-  
-<script src="/lib/zoom.min.js"></script>
-
-  <script type="text/javascript">
-    document.querySelector(".article-content") && zoom(".article-content");
-  </script>
-  <!-- zoom end -->
-  
-
-
-
-  
-
-
-  
-
-
-  
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-  
-  <!-- 尾部用户自定义相关内容 -->
-</body>
+    <div id="footer">骑士恨煎蛋，骑士恨孜然</div>
+    <img id="top" src="/images/up-circle.svg" alt="top" />
+    
+  </body>
 </html>
+<!-- 加载主题脚本文件 -->
+
+<script src="/scripts/utone.js"></script>
+
+
+<script type="text/javascript">
+  window.onload = function() {
+    scroll.init()
+    siteSearch.init()
+  }
+</script>
